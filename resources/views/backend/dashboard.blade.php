@@ -9,6 +9,8 @@
                 </div><!--card-header-->
                 <div class="card-block">
                     {!! __('strings.backend.welcome') !!}
+                    
+                    <a href="{{ env('APP_URL') }}/crmcalls/create">{!! 'Go to CRM' !!}</a>
                 </div><!--card-block-->
             </div><!--card-->
         </div><!--col-->

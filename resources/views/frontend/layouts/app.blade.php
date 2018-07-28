@@ -9,16 +9,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>@yield('title', app_name())</title>
-        <meta name="description" content="@yield('meta_description', 'Laravel 5 Boilerplate')">
-        <meta name="author" content="@yield('meta_author', 'Anthony Rappa')">
+        <meta name="description" content="@yield('meta_description', 'Patricks ABC System')">
+        <meta name="author" content="@yield('meta_author', 'Patrick Mutwiri')">
         @yield('meta')
 
-        {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
         @stack('before-styles')
 
         <!-- Check if the language is set to RTL, so apply the RTL layouts -->
         <!-- Otherwise apply the normal LTR layouts -->
+        
+        {{ style('//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css') }}
+        {{ style('css/bootstrap.min.css') }}
         {{ style(mix('css/frontend.css')) }}
+        {{ style('css/mutwiri.css') }}
 
         @stack('after-styles')
     </head>
@@ -27,7 +30,7 @@
             @include('includes.partials.logged-in-as')
             @include('frontend.includes.nav')
 
-            <div class="container">
+            <div class="container col-xs-12x">
                 @include('includes.partials.messages')
                 @yield('content')
             </div><!-- container -->
@@ -35,7 +38,10 @@
 
         <!-- Scripts -->
         @stack('before-scripts')
-        {!! script(mix('js/frontend.js')) !!}
+            {!! script(mix('js/frontend.js')) !!}
+            {!! script('js/jquery-ui.min.js') !!}
+            {!! script('js/bootstrap.min.js') !!}
+            {!! script('js/mutwiri.js') !!}
         @stack('after-scripts')
 
         @include('includes.partials.ga')

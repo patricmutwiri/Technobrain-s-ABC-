@@ -1,0 +1,6 @@
+body, .form-control {
+	font-size: 14px
+}
+.btn-group .btn-default {
+	background-color: transparent;
+}

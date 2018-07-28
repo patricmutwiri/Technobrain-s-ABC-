@@ -1,10 +1,12 @@
 <template>
     <div class="card">
         <div class="card-header">
-            <i class="fa fa-code"></i> Example Vue Component
+            <i class="fa fa-code"></i> Presentation By:
         </div>
         <div class="card-body">
-            I'm an example Vue component!
+            Name: Patrick Mutwiri.
+            Phone: 0727542899
+            Email: patwiri@gmail.com
         </div>
     </div>
 </template>

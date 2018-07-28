@@ -23,7 +23,7 @@
 
             <div class="callout callout-warning m-0 py-3">
                 <div class="avatar float-right">
-                    <img src="/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    <img src="{{ env('APP_URL') }}/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                 </div>
                 <div>Meeting with
                     <strong>Lucas</strong>
@@ -35,7 +35,7 @@
             <hr class="mx-3 my-0">
             <div class="callout callout-info m-0 py-3">
                 <div class="avatar float-right">
-                    <img src="/img/backend/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    <img src="{{ env('APP_URL') }}/img/backend/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                 </div>
                 <div>Skype with
                     <strong>Megan</strong>
@@ -56,19 +56,19 @@
                 <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
                 <div class="avatars-stack mt-2">
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                 </div>
             </div>
@@ -88,25 +88,25 @@
                 <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
                 <div class="avatars-stack mt-2">
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                     <div class="avatar avatar-xs">
-                        <img src="/img/backend/avatars/8.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/8.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
             <div class="message">
                 <div class="py-3 pb-5 mr-3 float-left">
                     <div class="avatar">
-                        <img src="/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                         <span class="avatar-status badge-success"></span>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
             <div class="message">
                 <div class="py-3 pb-5 mr-3 float-left">
                     <div class="avatar">
-                        <img src="/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                         <span class="avatar-status badge-success"></span>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
             <div class="message">
                 <div class="py-3 pb-5 mr-3 float-left">
                     <div class="avatar">
-                        <img src="/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                         <span class="avatar-status badge-success"></span>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
             <div class="message">
                 <div class="py-3 pb-5 mr-3 float-left">
                     <div class="avatar">
-                        <img src="/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                         <span class="avatar-status badge-success"></span>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
             <div class="message">
                 <div class="py-3 pb-5 mr-3 float-left">
                     <div class="avatar">
-                        <img src="/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <img src="{{ env('APP_URL') }}/img/backend/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                         <span class="avatar-status badge-success"></span>
                     </div>
                 </div>

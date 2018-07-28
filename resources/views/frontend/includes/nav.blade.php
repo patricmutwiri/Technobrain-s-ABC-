@@ -15,9 +15,10 @@
                     @include('includes.partials.lang')
                 </li>
             @endif
-
+                <li class="nav-item"><a href="{{route('crmcalls.index')}}" class="nav-link {{ active_class(Active::checkRoute('crmcalls.index')) }}">ABC Calls</a></li>
+                <li class="nav-item"><a href="{{route('crmcalls.create')}}" class="nav-link {{ active_class(Active::checkRoute('crmcalls.create')) }}">New Call</a></li>
             @auth
-                <li class="nav-item"><a href="{{route('frontend.user.dashboard')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }}">{{ __('navs.frontend.dashboard') }}</a></li>
+                <li class="nav-item"><a href="{{route('frontend.user.dashboard')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }}">{{ __('navs.frontend.dashboard') }}</a></li>                
             @endauth
 
             @guest
@@ -28,9 +29,7 @@
                 @endif
             @else
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuUser" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">{{ $logged_in_user->name }}</a>
-
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $logged_in_user->name }}</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuUser">
                         @can('view backend')
                             <a href="{{ route('admin.dashboard') }}" class="dropdown-item">{{ __('navs.frontend.user.administration') }}</a>

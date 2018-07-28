@@ -31,3 +31,8 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
      */
     include_route_files(__DIR__.'/backend/');
 });
+/*CRM Calls*/
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('crmcalls', 'crmcallsController');
+    Route::get('export', 'crmcallsController@export')->name('export');
+});
