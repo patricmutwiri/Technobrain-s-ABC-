@@ -4,20 +4,22 @@
         {!! Form::label('q0', 'Is the phone reachable?') !!}
     </div>
     <label class="radio-inlinex col-xs-12">
-        <div class="col-xs-12">{!! Form::radio('q0', 'No', false, ['class' => 'radio-false', 'id' => '']) !!}  No</div>
-        <div class="col-xs-12 not-reachable-desposition">
-            {{
-                Form::select('not_reachable',[
-                    '' => '-- Select --',
-                    "Phone Switched Off" => "Phone Switched Off",
-                    "No Answer" => "No Answer",
-                    "Phone Busy" => "Phone Busy",
-                    "Silent Call" => "Silent Call",
-                    "Number out of service" => "Number out of service",
-                    "Invalid" => "Invalid",
-                    "Voice Mail" => "Voice Mail"
-                ])
-            }}
+        <div class="col-xs-12">{!! Form::radio('q0', 'No', false, ['class' => 'radio-false', 'id' => '']) !!}  No
+            <div class="col-xs-12 not-reachable-desposition">
+                {!! Form::label('not_reachable', 'Call Disposation') !!}
+                {{
+                    Form::select('not_reachable',[
+                        '' => '-- Select --',
+                        "Phone Switched Off" => "Phone Switched Off",
+                        "No Answer" => "No Answer",
+                        "Phone Busy" => "Phone Busy",
+                        "Silent Call" => "Silent Call",
+                        "Number out of service" => "Number out of service",
+                        "Invalid" => "Invalid",
+                        "Voice Mail" => "Voice Mail"
+                    ])
+                }}
+            </div>
         </div>
         <div class="col-xs-12">{!! Form::radio('q0', 'Yes', false, ['class' => 'radio-sel', 'id' => '']) !!} Yes</div>
     </label>
@@ -27,7 +29,7 @@
 <!-- Q1 Field -->
 <div class="question hidden form-group col-xs-12" id="q1">
     <div class="col-xs-12">
-        {!! Form::label('q1', 'My Name is '.$name.' calling from ABC, could I speak to [Mr./Mrs/Ms./Dr./Prof] '.env('AGENT').'?') !!}
+        {!! Form::label('q1', 'My Name is '.$name.' calling from ABC, could I speak to [Mr./Mrs/Ms./Dr./Prof] '.config('app.agent').'?') !!}
     </div>
     <label class="radio-inlinex col-xs-12">
         <div class="col-xs-12">{!! Form::radio('q1', 'No', false, ['class' => 'radio-false', 'id' => '']) !!}  No</div>
@@ -40,7 +42,7 @@
 <!-- Q2 Field -->
 <div class="question form-group col-xs-12 hidden" id="q2">
     <div class="col-xs-12">
-        {!! Form::label('q2', 'Can I talk to '.env('AGENT').' at some other date and time?') !!}
+        {!! Form::label('q2', 'Can I talk to '.config('app.agent').' at some other date and time?') !!}
     </div>
     <label class="radio-inlinex col-xs-12">
         <div class="col-xs-12">
@@ -79,7 +81,7 @@
 <!-- Q4 Field -->
 <div class="question form-group col-xs-12 hidden" id="q4">
     <div class="col-xs-12">
-        {!! Form::label('q4', 'Thank you '.env('AGENT').', Have you heard about ABC?') !!}
+        {!! Form::label('q4', 'Thank you '.config('app.agent').', Have you heard about ABC?') !!}
     </div>
     
     <label class="radio-inlinex col-xs-12">
@@ -149,7 +151,7 @@
 <!-- Q7 Field -->
 <div class="question form-group col-xs-12 hidden" id="q7">
     <div class="col-xs-12">
-        {!! Form::label('q7', 'With that ' .env('AGENT'). ', you do agree that your business data is extremely important for your business & needs back up?') !!}
+        {!! Form::label('q7', 'With that ' .config('app.agent'). ', you do agree that your business data is extremely important for your business & needs back up?') !!}
     </div>
     <div class="col-xs-12">
         {!! Form::radio('q7', 'Disagree') !!}  Disagree 
@@ -259,7 +261,7 @@
 </div>
 
 <div class="question form-group last col-xs-12 hidden" id="thank-you">
-    Well {{ env('AGENT') }}, thank you for your time, it's been a pleasure talking to you. 
+    Well {{ config('app.agent') }}, thank you for your time, it's been a pleasure talking to you. 
     If you have any further clarifications , feel free to contact our website www.abc.co or phone number 020 – 5230028. 
     
     Have a good day. Good bye. 

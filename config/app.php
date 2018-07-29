@@ -138,6 +138,7 @@ return [
 
     'at_key'    => env('AT_KEY'),
     'at_username'    => env('AT_USERNAME'),
+    'agent'     => env('AGENT'),
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

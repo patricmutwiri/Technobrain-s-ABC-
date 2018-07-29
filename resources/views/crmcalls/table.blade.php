@@ -4,8 +4,8 @@
 <table class="table table-striped table-responsive" id="crmcalls-table">
     <thead>
         <tr>
-            <th>Initiated Call</th>
-            <th>Disposation</th>
+            <th>Phone Reachable?</th>
+            <th>Not Reachable Disposation</th>
             <th>Q1</th>
             <th>Q2</th>
             <th>Q2 Response(No)</th>

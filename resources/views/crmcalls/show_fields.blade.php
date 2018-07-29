@@ -1,6 +1,6 @@
 <!-- Id Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('id', 'Id:') !!}
     </div>
     <div class="col-xs-6">
@@ -10,17 +10,25 @@
 
 <!-- Q0 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
-        {!! Form::label('q0', 'Can the call be initiated?') !!}
+    <div class="col-xs-6">
+        {!! Form::label('q0', 'Phone Reachable?') !!}
     </div>
     <div class="col-xs-6">
         {!! $crmcalls->q0 !!}
     </div>
 </div>
 
+<div class="form-group col-xs-4">
+    <div class="col-xs-6">
+        {!! Form::label('not_reachable', 'Status/Disposition:') !!}
+    </div>
+    <div class="col-xs-6">
+        {!! $crmcalls->not_reachable !!}
+    </div>
+</div>
 <!-- Q1 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q1', 'Q1:') !!}
     </div>
     <div class="col-xs-6">
@@ -30,7 +38,7 @@
 
 <!-- Q2 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q2', 'Q2:') !!}
     </div>
     <div class="col-xs-6">
@@ -40,7 +48,7 @@
 
 <!-- Q2 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q2', 'Q2 (No):') !!}
     </div>
     <div class="col-xs-6">
@@ -50,7 +58,7 @@
 
 <!-- Q2 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q2', 'Q2 (Datetime):') !!}
     </div>
     <div class="col-xs-6">
@@ -60,7 +68,7 @@
 
 <!-- Q3 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q3', 'Q3:') !!}
     </div>
     <div class="col-xs-6">
@@ -68,7 +76,7 @@
     </div>
 </div>
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q3 desposition', 'Q3 Desposition:') !!}
     </div>
     <div class="col-xs-6">
@@ -79,7 +87,7 @@
 
 <!-- Q4 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q4', 'Q4:') !!}
     </div>
     <div class="col-xs-6">
@@ -89,7 +97,7 @@
 
 <!-- Q5 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q5', 'Q5:') !!}
     </div>
     <div class="col-xs-6">
@@ -99,7 +107,7 @@
 
 <!-- Q5 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q5', 'Q5 (others):') !!}
     </div>
     <div class="col-xs-6">
@@ -109,7 +117,7 @@
 
 <!-- Q6 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q6', 'Q6:') !!}
     </div>
     <div class="col-xs-6">
@@ -119,7 +127,7 @@
 
 <!-- Q6 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q6', 'Q6 (others):') !!}
     </div>
     <div class="col-xs-6">
@@ -129,7 +137,7 @@
 
 <!-- Q7 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q7', 'Q7:') !!}
     </div>
     <div class="col-xs-6">
@@ -139,7 +147,7 @@
 
 <!-- Q8 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q8', 'Q8:') !!}
     </div>
     <div class="col-xs-6">
@@ -149,7 +157,7 @@
 
 <!-- Q9 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q9', 'Q9:') !!}
     </div>
     <div class="col-xs-6">
@@ -159,7 +167,7 @@
 
 <!-- Q10 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q10', 'Q10:') !!}
     </div>
     <div class="col-xs-6">
@@ -168,7 +176,7 @@
 </div>
 
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q10', 'Q10 (datetime):') !!}
     </div>
     <div class="col-xs-6">
@@ -178,7 +186,7 @@
 
 <!-- Q11 Email Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q11_email', 'Q11 Email:') !!}
     </div>
     <div class="col-xs-6">
@@ -188,7 +196,7 @@
 
 <!-- Q12 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q12', 'Q12:') !!}
     </div>
     <div class="col-xs-6">
@@ -197,7 +205,7 @@
 </div>
 <!-- Q12 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q12', 'Q12 (details):') !!}
     </div>
     <div class="col-xs-6">
@@ -206,7 +214,7 @@
 </div>
 <!-- Q13 Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('q13', 'Q13 Is this an Escalation?') !!}
     </div>
     <div class="col-xs-6">
@@ -216,7 +224,7 @@
 
 <!-- Created At Field -->
 <div class="form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('created_at', 'Created At:') !!}
     </div>
     <div class="col-xs-6">
@@ -226,7 +234,7 @@
 
 <!-- Updated At Field -->
 <div class="form-group col-xs-4 hidden ">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('updated_at', 'Updated At:') !!}
     </div>
     <div class="col-xs-6">
@@ -236,7 +244,7 @@
 
 <!-- Deleted At Field -->
 <div class="hidden form-group col-xs-4">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
         {!! Form::label('deleted_at', 'Deleted At:') !!}
     </div>
     <div class="col-xs-6">
