@@ -21,7 +21,10 @@
         {{ style('//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css') }}
         {{ style('css/bootstrap.min.css') }}
         {{ style(mix('css/frontend.css')) }}
+        {{ style('css/jquery.datetimepicker.css') }}
+
         {{ style('css/mutwiri.css') }}
+
 
         @stack('after-styles')
     </head>
@@ -41,6 +44,7 @@
             {!! script(mix('js/frontend.js')) !!}
             {!! script('js/jquery-ui.min.js') !!}
             {!! script('js/bootstrap.min.js') !!}
+            {!! script('js/jquery.datetimepicker.full.min.js') !!}
             {!! script('js/mutwiri.js') !!}
         @stack('after-scripts')
 

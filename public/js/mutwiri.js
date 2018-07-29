@@ -23,7 +23,7 @@
 			window.location = url;
 		});
 
-		jQuery('input[type=datex]').datepicker();
+		jQuery('input[type=datex]').datetimepicker();
 		let homeurl = jQuery('a.navbar-brand').attr('href');
 		let q = jQuery('div.question'); //Qs
 		q.each(function(){
